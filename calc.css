@@ -1,0 +1,55 @@
+.main{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid black;
+    display: block;
+    width: 240px;
+    height: 360px;        
+}
+
+input[type=text]{
+    background-color: rgb(0, 50, 56);
+    width: 228px;
+    height: 60px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    text-align: right;
+    padding: 0 6px;
+}
+
+.buttons{
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgb(148, 148, 148);
+    font-size: 24px;
+    padding: 0;
+    float: left;
+    cursor: pointer;
+}
+
+.buttons:active{
+    filter: brightness(75%);
+}
+
+.function{
+    color: white;
+    background-color: rgb(67, 145, 165);
+}
+
+.operators{
+    color: white;
+    background-color: rgb(25, 127, 153);
+}
+
+#plus{
+   float: right;
+   height: 120px;
+}
+
+#equal{
+    color: rgb(67, 145, 165);
+}

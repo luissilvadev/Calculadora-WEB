@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="calc.css">
+    <script language="JavaScript" src="calc.js"></script>
+</head>
+<body>    
+    <form action="" name="calc">
+        <div class="main">
+            <input type="text" name="display">
+            <div class="lines">
+                <input type="button" class="buttons function" value="CLR"  onclick="clean()">
+                <input type="button" class="buttons function" value="DEL"  onclick="backspace(value)">
+                <input type="button" class="buttons function" value="%"    onclick="percent(value)">
+                <input type="button" class="buttons operators" value="/"   onclick="buttonclick(value)">
+            </div>
+            <div class="lines">
+                <input type="button" class="buttons" value="7"onclick="buttonclick (value)">
+                <input type="button" class="buttons" value="8"onclick="buttonclick (value)">
+                <input type="button" class="buttons" value="9"onclick="buttonclick (value)">
+                <input type="button" class="buttons operators" value="*"   onclick="buttonclick(value)">
+            </div>
+            <div class="lines">
+                <input type="button" class="buttons" value="4"onclick="buttonclick (value)">
+                <input type="button" class="buttons" value="5"onclick="buttonclick (value)">
+                <input type="button" class="buttons" value="6"onclick="buttonclick (value)">
+                <input type="button" class="buttons operators" value="-"   onclick="buttonclick(value)">
+            </div>
+            <div class="lines">
+                <input type="button" class="buttons" value="1"onclick="buttonclick (value)">
+                <input type="button" class="buttons" value="2"onclick="buttonclick (value)">
+                <input type="button" class="buttons" value="3"onclick="buttonclick (value)">
+                <input type="button" class="buttons operators" id="plus"value="+"  onclick="buttonclick(value)">
+            </div>
+            <div class="lines">
+                <input type="button" class="buttons" value="."onclick="buttonclick (value)">
+                <input type="button" class="buttons" value="0"onclick="buttonclick (value)">
+                <input type="button" class="buttons" id="equal" value="="  onclick="result(value)">
+            </div>
+        </div>
+    </form>       
+</body>
+</html>
